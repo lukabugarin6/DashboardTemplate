@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+	<title>drugi</title>
+	<defs>
+		<image  width="32" height="32" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAAXNSR0IB2cksfwAAAgdQTFRFAAAA//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////r29fj/+vP2///////////xxYlqW2uk2v///9SkZWFqkL7x///////////nunpqW2Ga1f///82aW2FqgLLn//////////rs1bKpm4aCcHJ4ZWNqW2FvanJ4cG1vYGh4cHKCi5Opus3s//////////XPoG1qapbP9f//////36JzapHF5fDx9fDYsHdqW2GVxfDx9fDx9cCVe6fY9eHFlW1qW2Fzqtr/////////yvj/+sOV////////8MitoLLU//XUuputz+v/////////////////////////////////////////////////////////////////////////////////////////////2qBzgKfY8Pr//+7YsH9qpdT//////////+7Kao7K8P////////DYv5aHcHKHm7nY9f3/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////N4JZkgAAAK10Uk5TAAIYLkRacIacssje9IMPJTtRZXiKnbDD1un9/4ttkKO2ydzw////k/z/////////m/f/////////ovP///////////////+q7//////q//////////////////+55v//weH//////8rd09nU5dDty/bHCL66F7UfsSetqDak////////PqD///9G//////9Pl1hhjmpye4L78r+3rqaVjIRzYllIQDcvJh4VDQR+x2LoAAABlElEQVR4nGNgwACMTMwsrGzsHJxc3Dy8MEE+fgFBIWERUTFxCUkpaQSQYWCQlZNXUFRSBnJUVCGCakgK1IGaNaBsTS1tHRCtq6ePUGAAVGAIZRsZm5iCaDNzC4QCS6ACKxDD2sbWzt7B0Q4InMydXVzdoArcgQo8gLSnlzka8PYBK+AEKvAF0n7m/gGBQcEhoUAQZh4eGhEZFQ1WEANUEAuyPjgO1Q3xUIckABUkwtyXlAw2NiU1DeHSdKCCDIQHEACmIBOoIAufAiWggmyQAogPEcAJqiAHqCAXpADdl+ZQBXlABfn4rCgAKijEp0AaqEAcr4IiBoZivAr4GBhK8CooZWAow6ugnIGhAq+CSgaGKrwKmBkYqqGxiQJgsSldw8BQC6TqzOsbkOUbm6KaIawWBoZWINUWiR7S7R0QBZ0MDAYguqsbJa56evugZvUzMEyQxgcmMjCo41UwiYFhMl4FUxgYRPAqmMrAwI5XwTQGhukzZvomZuVyzZo9Z67ovPkLpi2csmix4JKly5avWLlq9RoAxg6lomxfPKAAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Background" href="#img1" x="0" y="0" />
+</svg>

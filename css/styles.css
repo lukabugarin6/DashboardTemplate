@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap');
+
+:root {
+    --btn-color: #4B6CB7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #A7A7A8;
+    font-family: 'Open Sans';
+}
+
+h1 {
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+
+ul {
+    list-style: none;
+}
+
+button {
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background: var(--btn-color);
+}
+
+.custom-container {
+    max-width: 640px;
+    padding: 0 1.25rem;
+    margin: 0 auto;
+}
+
+@media(min-width:768px) {
+    .custom-container {
+        max-width: 768px;
+    }
+}
+
+@media(min-width:1024px) {
+    .custom-container {
+        max-width: 1024px;
+    }
+}
+
+@media(min-width:1280) {
+    .custom-container {
+        max-width: 1280;
+    }
+}
+
+@media(min-width:1440px) {
+    .custom-container {
+        max-width: 1440px;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem .75rem;
+}
+
+header button {
+    font-size: .875rem;
+    color: #fff;
+    border-radius: .25rem;
+    padding: .625rem .875rem;
+    align-self: flex-start;
+}
+
+header nav ul {
+    display: flex;
+    column-gap: .875rem;
+    align-items: center;
+}
+
+header nav ul li {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li:nth-child(2) {
+    transform: translateY(-1px);
+}
+
+header nav ul li:nth-child(3) {
+    transform: translate(-6px,-2px);
+}
+
+.content {
+    padding-top: 3rem;
+    background-color: #FAFAFA;
+}
+
+.content-grid {
+   display: flex;
+}
+
+.content__user-nav {
+    flex: 1;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 4px rgba(155,155,155,0.15),
+                -1px -1px 5px 2px rgba(155,155,155,0.15);
+    position: relative;
+    /* padding: 1.75rem;
+    padding-bottom: 2.25rem; */
+}
+
+.content__user-nav .checkbox {
+    position: absolute;
+    right: -.5rem;
+    top: .5rem;
+    /* transform: translate(75%); */
+    width: 2rem;
+    height: 2rem;
+    /* opacity: 0; */
+    display: none;
+  
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.content__user-nav ul {
+    display: flex;
+    padding-top: 1rem;
+    flex-direction: column;
+    row-gap: .75rem;
+    padding-bottom: 1.5rem;
+    width: 100%;
+}
+
+.content__user-nav ul li button {
+    font-weight: 600;
+    color: #A7A7A8;
+    display: inline-flex;
+    align-items: center;
+    column-gap: .25rem;
+    background: transparent;
+    padding: 0 1.75rem;
+    width: 100%;
+    position: relative;
+}
+
+.content__user-nav ul li button.active {
+    color: var(--btn-color);
+}
+
+.content__user-nav ul li button.active::before {
+    content: '';
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    transition: opacity 0.3s ease-in-out;
+    background: var(--btn-color);
+}
+
+
+.content__user-nav__user {
+    display: flex;
+    column-gap: .5rem;
+    align-items: center;
+    padding: 1.75rem;
+    padding-bottom: 1rem;
+}
+
+.content__user-nav__user .img-wrapper {
+    width: 3.5rem
+}
+
+.content__user-nav__user .img-wrapper img {
+    width: 100%;
+}
+
+.content__user-nav__user__info h2 {
+    font-size: 1.75rem;
+    color: rgb(60,60,60);
+}
+
+.content__user-nav__user__info p {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.content__main-content {
+    flex: 5;
+}
+
+.content__main-content {
+    padding-left: 4rem;
+}
+
+.content__main-content__table {
+    padding-top: 2.75rem;
+}
+
+.content__main-content__table__header {
+    display: flex;
+    padding-left: 1.5rem;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-bottom: .75rem;
+    margin-bottom: .5rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+.content__main-content__table__list__item {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    padding-left: 1.5rem;
+    font-size: .875rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    position: relative;
+    margin: .25rem 0;
+}
+
+.content__main-content__table__list__item button {
+    text-transform: uppercase;
+    font-weight: 600;
+    background: transparent;
+    color: var(--btn-color);
+    display: inline-flex;
+    align-items: center;
+    padding-left: 2rem;
+    column-gap: 1rem;
+    position: relative;
+}
+
+.content__main-content__table__list__item button .circle {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid #A7A7A8;
+    transition: border .3s ease-in-out;
+    border-radius: 50%;
+    position: relative;
+}
+
+.content__main-content__table__list__item button .circle::before, .content__main-content__table__list__item button .circle::after {
+    content: '';
+    position: absolute;
+    background-color: #A7A7A8;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: all .3s ease-in-out;
+}
+
+.content__main-content__table__list__item button .circle::before {
+    width: 1px;
+    height: 50%;
+}
+
+.content__main-content__table__list__item button .circle::after {
+    width: 50%;
+    height: 1px;
+}
+
+.content__main-content__table__list__item::before {
+    content: '';
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease-in-out;
+    background: var(--btn-color);
+    opacity: 0;
+}
+
+.content__main-content__table__list__item:hover {
+    /* border-left: 4px solid var(--btn-color); */
+    background: #fff;
+    box-shadow: 1px 1px 5px 4px rgba(155,155,155,0.15),
+    -1px -1px 5px 2px rgba(155,155,155,0.15);
+}
+
+.content__main-content__table__list__item:hover button .circle {
+    border: 1px solid var(--btn-color);
+}
+
+.content__main-content__table__list__item:hover button .circle::after, .content__main-content__table__list__item:hover button .circle::before {
+    background-color: var(--btn-color);
+}
+
+.content__main-content__table__list__item:hover::before {
+    opacity: 1;
+}
+
+.content__main-content__table__header > div, .content__main-content__table__list__item > div {
+    flex: 1;
+}
+
+.content__main-content__table__header button {
+    color:#fff;
+    border-radius: 6px;
+    padding: .75rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+@media(max-width: 1440px) {
+    .content__main-content__table {
+        text-align: center;
+    }
+}
+@media(max-width:1024px) {    
+    header button {
+        display: none;
+    }
+    .content__user-nav {
+        transform: translate(-97%);
+        position: absolute;
+        transition: transform .3s ease-out;
+        z-index: 10;
+        /* left: 2; */
+    }
+    .content__user-nav.active {
+        transform: translate(0);
+    }
+    .content__user-nav .checkbox {
+        display: block;
+    }
+
+    .content__user-nav .checkbox:checked .content__user-nav {
+        transform: translate(0);
+    }
+
+    .content__user-nav .checkbox::before,.content__user-nav .checkbox::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        height: 4px;
+        background: var(--btn-color);
+    }
+    .content__user-nav .checkbox::before {
+        width: 100%;
+        top: 0;
+    }
+    .content__user-nav .checkbox::after {
+        width: 45%;
+        top: 35%;
+    }
+    .content__main-content__table__header, .content__main-content__table__list__item {
+        padding-left: .25rem;
+    }
+    .content__main-content {
+        padding-left: 1.75rem;
+    }
+    .content__main-content__table__header, .content__main-content__table__list__item,header {
+        
+    }
+}
+
+@media (max-width: 600px) {
+    .content__main-content {
+        padding-left: 1.25rem;
+    }
+    .content__main-content__table__header, .content__main-content__table__list__item {
+        align-items: flex-start;
+    }
+    .content__main-content__table__header, .content__main-content__table__list__item, .content__main-content__table__list__item button {
+        font-size: .5rem;
+    }
+    .content__main-content__table__header button {
+        font-size: .375rem;
+        padding: .25rem;
+    }
+}
+
+
