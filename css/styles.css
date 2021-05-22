@@ -36,12 +36,12 @@ button {
 }
 
 .custom-container {
-    max-width: 640px;
-    padding: 0 1.25rem;
+    /* max-width: 640px; */
+    padding: 0 4rem;
     margin: 0 auto;
 }
 
-@media(min-width:768px) {
+/* @media(min-width:768px) {
     .custom-container {
         max-width: 768px;
     }
@@ -63,7 +63,7 @@ button {
     .custom-container {
         max-width: 1440px;
     }
-}
+} */
 
 header {
     display: flex;
@@ -110,7 +110,7 @@ header nav ul li:nth-child(3) {
 }
 
 .content__user-nav {
-    flex: 1;
+    flex: 2;
     background-color: #fff;
     box-shadow: 1px 1px 5px 4px rgba(155,155,155,0.15),
                 -1px -1px 5px 2px rgba(155,155,155,0.15);
@@ -151,11 +151,12 @@ header nav ul li:nth-child(3) {
     column-gap: .25rem;
     background: transparent;
     padding: 0 1.75rem;
+    transition: color .3s ease-in-out;
     width: 100%;
     position: relative;
 }
 
-.content__user-nav ul li button.active {
+.content__user-nav ul li button.active, .content__user-nav ul li button:hover {
     color: var(--btn-color);
 }
 
@@ -197,7 +198,7 @@ header nav ul li:nth-child(3) {
 }
 
 .content__main-content {
-    flex: 5;
+    flex: 4;
 }
 
 .content__main-content {
@@ -321,7 +322,10 @@ header nav ul li:nth-child(3) {
         text-align: center;
     }
 }
-@media(max-width:1024px) {    
+@media(max-width:1024px) {   
+    .custom-container {
+        padding: 0 1.25rem;
+    } 
     header button {
         display: none;
     }
@@ -329,6 +333,7 @@ header nav ul li:nth-child(3) {
         transform: translate(-97%);
         position: absolute;
         transition: transform .3s ease-out;
+        width: 50%;
         z-index: 10;
         /* left: 2; */
     }
@@ -349,6 +354,7 @@ header nav ul li:nth-child(3) {
         left: 0;
         height: 4px;
         background: var(--btn-color);
+        transition: all .4s linear;
     }
     .content__user-nav .checkbox::before {
         width: 100%;
@@ -362,7 +368,16 @@ header nav ul li:nth-child(3) {
         padding-left: .25rem;
     }
     .content__main-content {
-        padding-left: 1.75rem;
+        padding-left: 2rem;
+    }
+    .content__user-nav .checkbox:checked::after {
+        transform: rotate(45deg);
+        width: 60%;
+        top: 0;
+    }
+    .content__user-nav .checkbox:checked::before {
+        width: 60%;
+        transform: rotate(-45deg);
     }
     .content__main-content__table__header, .content__main-content__table__list__item,header {
         
@@ -370,6 +385,9 @@ header nav ul li:nth-child(3) {
 }
 
 @media (max-width: 600px) {
+    .content__user-nav {
+        width: 90%;
+    }
     .content__main-content {
         padding-left: 1.25rem;
     }
